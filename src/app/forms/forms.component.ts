@@ -5,11 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './forms.component.html',
   styleUrls: ['./forms.component.css']
 })
-export class FormsComponent implements OnInit {
+export class FormsComponent  {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  submit(){
+    console.log("Form Submitted")
   }
-
 }
