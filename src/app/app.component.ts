@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Qoutes app';
+  likes: number;
+  dislikes: number;
+
+  submit() {
+    console.log("Form submitted")
+  }
+  upvote() {
+    this.likes+=1;
+  }
+  downvote() {
+    this.dislikes+=1;
+  }
 }

@@ -1,0 +1,41 @@
+<div class="container567">
+  <div class="row782">
+    <h2>Life quotes</h2>
+    <form (ngSubmit)="submit()">
+      <div class="form-group">
+        <label for="fname">Name</label><br>
+        <input type="text" name="fname" class="form-control" ngModel>
+      </div>
+      <pre></pre>
+
+      <div class="form-group">
+        <label for="title">Title</label><br>
+        <input type="text" name="title" class="form-control" ngModel>
+      </div>
+      <pre></pre>
+
+      <div class="form-group">
+        <label for="quote">Quote</label><br>
+        <input type="text" name="quote" class="form-control" ngModel>
+      </div>
+      <pre></pre>
+
+      <div class="form-group">
+        <label for="auth">Author</label><br>
+        <input type="text" name="auth" class="form-control" ngModel>
+      </div>
+      <pre></pre>
+
+      <button class="btn btn-primary" type="submit" value="submit" (click)="submit()">Submit</button>
+    </form>
+  </div>
+</div>
+
+<div class="card">
+  <h6 class="card-subtitle mb-2 text-muted"> <span id="when">Posted:.</span> </h6>
+  <div class="container-fluid" id="buttons">
+    <button class="btn btn-sm btn-success" (click)='upvote()'><i class="fa fa-thumbs-up" id="like"></i></button> 
+    <button class="btn btn-sm hate" id="hate" (click)='downvote()'><i class="fa fa-thumbs-down" id="dislike"></i></button> 
+    <button class="btn btn-sm btn-danger" id="del" (click)='deleteQuote(true)'><i class="fa fa-trash" id="delete"></i></button> 
+  </div>
+</div>
