@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-forms',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormsComponent  {
 
-  submit(){
-    console.log("Form Submitted")
+  
+  submit(formsForm: any){
+    console.log("Form Submitted",formsForm)
   }
 }
+function formsForm(arg0: string, formsForm: any) {
+  throw new Error('Function not implemented.');
+}
+
