@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Goal } from './goal';
 
 @Component({
   selector: 'app-root',
@@ -6,16 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  likes: number;
-  dislikes: number;
-
-  submit() {
-    console.log("Form submitted")
-  }
-  upvote() {
-    this.likes+=1;
-  }
-  downvote() {
-    this.dislikes+=1;
-  }
+   
 }
