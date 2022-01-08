@@ -1,4 +1,4 @@
-# Qoutesapp
+# Qoutes app
 
 This project was built by Alexander Mureithi and  generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
 
