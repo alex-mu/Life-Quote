@@ -6,7 +6,7 @@ import { Goal } from '../goal';
   templateUrl: './goal.component.html',
   styleUrls: ['./goal.component.css']
 })
-export class GoalComponent implements OnInit {
+export class GoalComponent  {
   goals: Goal[] = [
     new Goal(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
     new Goal(2,'Buy Cookies','I have to buy cookies for the parrot',new Date(2019,6,9)),
@@ -18,16 +18,20 @@ export class GoalComponent implements OnInit {
   toggleDetails(index:any){
     this.goals[index].showDescription = !this.goals[index].showDescription;
   }
-  completeGoal(isComplete: any, index: number){
+  completeGoal(isComplete: boolean, index: any){
     if (isComplete) {
       this.goals.splice(index,1);
     }
   }
-  
-
-  constructor() { }
-
-  ngOnInit(): void {
+  deleteGoal(isComplete: boolean, index: number){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.goals[index].name}?`)
+      if (toDelete){
+        this.goals.splice(index,1)
+      }
+    }
   }
-
 }
+
+
+
