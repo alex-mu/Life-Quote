@@ -9,6 +9,7 @@
             <h6 id={{i}} appStrikethrough>{{goal.name}} {{goal.completeDate|date|lowercase}}</h6>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Show More</button>
           </div>
+          <pre></pre>
   
           <div *ngIf='goal.showDescription'>
             <app-goal-detail  [goal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-goal-detail>

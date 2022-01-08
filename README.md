@@ -1,6 +1,41 @@
 # Qoutesapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
+This project was built by Alexander Mureithi and  generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
+
+## Description
+
+The project is a simple example of what a quotes app would look like and you can add one if you want to.
+
+## Known Bugs
+There is currently a tag error within various directives but they don't currenly affect the build of the app.
+
+## License
+
+MIT License
+
+Copyright (c) 2021 Alexander Ndegwa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Instructions
+
+Further instructions on how to build and view the app are down below.
 
 ## Development server
 
