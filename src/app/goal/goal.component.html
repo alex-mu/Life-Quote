@@ -1,13 +1,13 @@
 <div class="container">
-    <h1>My Goals</h1>
+    <h1>Life Quotes</h1>
     <hr>
   
     <div class="row">
       <div class="col-md-6">
         <div *ngFor='let goal of goals;let i = index'>
           <div>
-            <h4 id={{i}} appStrikethrough>{{goal.name}} due on {{goal.completeDate|date|lowercase}}</h4>
-            <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+            <h6 id={{i}} appStrikethrough>{{goal.name}} {{goal.completeDate|date|lowercase}}</h6>
+            <button (click)='toggleDetails(i)' class="btn btn-primary">Show More</button>
           </div>
   
           <div *ngIf='goal.showDescription'>
@@ -15,7 +15,10 @@
           </div>
         </div>
       </div>
+      <div class="col-md-6">
+        <app-goal-form (addGoal)="addNewGoal($event)"></app-goal-form>
+   </div>
     </div>
-    <p *ngIf='goals.length > 10'>Your goals are too many</p>
-    
+    <p *ngIf='goals.length > 20'>You have too many goals</p>
+  </div>
   
