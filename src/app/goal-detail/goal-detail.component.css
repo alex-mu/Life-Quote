@@ -1,3 +1,8 @@
-body{
-    background: #d3d5d8;
+.container {
+    border-radius: 5px;
+    background: #78ddeb;
+    box-shadow:  18px 18px 59px #b6b89d,
+             -18px -18px 59px #ffffff;
 }
+
+
